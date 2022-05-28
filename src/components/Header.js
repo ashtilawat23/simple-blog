@@ -1,5 +1,7 @@
 import React from 'react';
+import { Box } from '@chakra-ui/react';
+import { Nav } from './Nav';
 
 export const Header = () => {
-  return <div>Header</div>;
+  return <Box className="header"><Nav/></Box>;
 };
