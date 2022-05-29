@@ -39,3 +39,7 @@
   align-items: center;
   justify-content: space-evenly;
 }
+
+.content {
+  height: 80vh;
+}
