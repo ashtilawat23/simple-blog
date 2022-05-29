@@ -1,11 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import '@fontsource/space-mono/700.css';
 import { extendTheme, ChakraProvider, ColorModeScript } from '@chakra-ui/react';
 
 const config = {
   initialColorMode: 'dark',
-  useSystemColorMode: false
+  useSystemColorMode: false,
+  fonts: {
+    heading: `'Space Mono', 'sans-serif'`
+  }
 };
 
 const theme = extendTheme({ config });

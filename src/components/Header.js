@@ -17,7 +17,9 @@ export const Header = () => {
     return (
       <Box className="hamburgerHeader">
         <Box className="hamburgerLeft">
-          <Heading as="em">BOOTCAMP1ST</Heading>
+          <Heading as="h1" fontFamily={'Space Mono'}>
+            BOOTCAMP1ST
+          </Heading>
           <Button>Post a Job</Button>
         </Box>
         <Hamburger />

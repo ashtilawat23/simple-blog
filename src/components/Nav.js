@@ -15,7 +15,9 @@ const businesses = {
 export const Nav = () => {
   return (
     <Box className="nav">
-      <Heading as="em">BOOTCAMP1ST</Heading>
+      <Heading as="h1" fontFamily={'Space Mono'}>
+        BOOTCAMP1ST
+      </Heading>
       <Dropdown title={jobSeekers.title} items={jobSeekers.items} />
       <Dropdown title={businesses.title} items={businesses.items} />
     </Box>

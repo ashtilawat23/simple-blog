@@ -1,9 +1,12 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 /** header styles **/
 
 .header {
-  position: absolute;
-  top: 0;
-  left: 0;
   height: 10vh;
   width: 100%;
   display: flex;
@@ -30,9 +33,6 @@
 }
 
 .hamburgerHeader {
-  position: absolute;
-  top: 0;
-  left: 0;
   height: 10vh;
   width: 100%;
   display: flex;
