@@ -40,6 +40,18 @@
   justify-content: space-evenly;
 }
 
+/** content styles **/
+
 .content {
   height: 80vh;
+}
+
+/** footer styles **/
+
+.footer {
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
