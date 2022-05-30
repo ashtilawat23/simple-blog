@@ -13,22 +13,26 @@ export const Nav = () => {
         BOOTCAMP1ST
       </Heading>
       <Menu>
-        <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
+        <MenuButton as={Button} rightIcon={<ChevronDownIcon />} fontFamily={'Space Mono'}>
           Job Seekers
         </MenuButton>
         <MenuList>
           {jobSeekers.map((action) => (
-            <MenuItem key={action}>{action}</MenuItem>
+            <MenuItem key={action} fontFamily={'Space Mono'}>
+              {action}
+            </MenuItem>
           ))}
         </MenuList>
       </Menu>
       <Menu>
-        <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
+        <MenuButton as={Button} rightIcon={<ChevronDownIcon />} fontFamily={'Space Mono'}>
           Businesses
         </MenuButton>
         <MenuList>
           {businesses.map((action) => (
-            <MenuItem key={action}>{action}</MenuItem>
+            <MenuItem key={action} fontFamily={'Space Mono'}>
+              {action}
+            </MenuItem>
           ))}
         </MenuList>
       </Menu>

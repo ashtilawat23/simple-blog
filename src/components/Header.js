@@ -5,8 +5,8 @@ import { Nav } from './Nav';
 import { QuickLinks } from './QuickLinks';
 
 export const Header = () => {
-  const [isLargerThan1200] = useMediaQuery('(min-width: 1200px)');
-  if (isLargerThan1200) {
+  const [isLargerThan1300] = useMediaQuery('(min-width: 1300px)');
+  if (isLargerThan1300) {
     return (
       <Box className="header">
         <Nav />
@@ -20,7 +20,7 @@ export const Header = () => {
           <Heading as="h1" fontFamily={'Space Mono'}>
             BOOTCAMP1ST
           </Heading>
-          <Button>Post a Job</Button>
+          <Button fontFamily={'Space Mono'}>Post a Job</Button>
         </Box>
         <Hamburger />
       </Box>

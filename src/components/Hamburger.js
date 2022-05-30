@@ -27,15 +27,19 @@ export const Hamburger = () => {
       <Menu>
         <MenuButton as={IconButton} icon={<HamburgerIcon />} />
         <MenuList>
-          <MenuGroup title={jobSeekers.title}>
+          <MenuGroup title={jobSeekers.title} fontFamily={'Space Mono'}>
             {jobSeekers.items.map((action) => (
-              <MenuItem key={action}>{action}</MenuItem>
+              <MenuItem key={action} fontFamily={'Space Mono'}>
+                {action}
+              </MenuItem>
             ))}
           </MenuGroup>
           <MenuDivider />
-          <MenuGroup title="Businesses">
+          <MenuGroup title="Businesses" fontFamily={'Space Mono'}>
             {businesses.items.map((action) => (
-              <MenuItem key={action}>{action}</MenuItem>
+              <MenuItem key={action} fontFamily={'Space Mono'}>
+                {action}
+              </MenuItem>
             ))}
           </MenuGroup>
         </MenuList>
