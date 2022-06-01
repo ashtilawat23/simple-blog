@@ -12,7 +12,7 @@ import {
 } from '@chakra-ui/react';
 import { ExternalLinkIcon, ChevronUpIcon } from '@chakra-ui/icons';
 
-export const JobPost = () => {
+export const JobPost = (props) => {
   const [isLargerThan1300] = useMediaQuery('(min-width: 1300px)');
   if (isLargerThan1300) {
     return (
@@ -20,30 +20,30 @@ export const JobPost = () => {
         <Image
           borderRadius={'lg'}
           boxSize="5vh"
-          src="https://cdn.worldvectorlogo.com/logos/meta-1.svg"
-          alt="Meta"
+          src={props.source}
+          alt={props.company}
         />
         <Box className="jobinfo">
           <Text fontFamily={'Space Mono'} fontSize="sm">
-            Meta
+            {props.company}
           </Text>
           <Text fontFamily={'Space Mono'} fontSize="sm">
-            Frontend Engineer
+            {props.title}
           </Text>
           <Box className="badges">
-            <Badge me={'5%'}>Los Angeles</Badge>
-            <Badge colorScheme={'green'}>$90k - $120k</Badge>
+            <Badge me={'5%'}>{props.location}</Badge>
+            <Badge colorScheme={'green'}>{props.salary}</Badge>
           </Box>
         </Box>
         <Box className="tags">
           <Tag variant={'outline'} colorScheme="yellow">
-            JavaScript
+            {props.tags[0]}
           </Tag>
           <Tag variant={'outline'} colorScheme="cyan">
-            React
+          {props.tags[1]}
           </Tag>
           <Tag variant={'outline'} colorScheme="orange">
-            Node
+          {props.tags[2]}
           </Tag>
         </Box>
         <ButtonGroup>
@@ -63,19 +63,19 @@ export const JobPost = () => {
         <Image
           borderRadius={'lg'}
           boxSize="5vh"
-          src="https://cdn.worldvectorlogo.com/logos/meta-1.svg"
-          alt="Meta"
+          src={props.source}
+          alt={props.company}
         />
         <Box className="jobinfosm">
           <Text fontFamily={'Space Mono'} fontSize="sm">
-            Meta
+            {props.company}
           </Text>
           <Text fontFamily={'Space Mono'} fontSize="sm">
-            Frontend Engineer
+            {props.title}
           </Text>
           <Box className="badges">
-            <Badge me={'5%'}>Los Angeles</Badge>
-            <Badge colorScheme={'green'}>$90k - $120k</Badge>
+            <Badge me={'5%'}>{props.location}</Badge>
+            <Badge colorScheme={'green'}>{props.salary}</Badge>
           </Box>
         </Box>
         <ButtonGroup>

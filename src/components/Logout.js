@@ -6,10 +6,10 @@ const Logout = () => {
   const { logout } = useAuth0();
   return (
     <Button
-    fontFamily={'Space Mono'}
+      fontFamily={'Space Mono'}
       onClick={() =>
         logout({
-          returnTo: window.location.origin,
+          returnTo: window.location.origin
         })
       }
     >

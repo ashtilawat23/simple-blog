@@ -5,11 +5,8 @@ import { Button } from '@chakra-ui/react';
 const Login = () => {
   const { loginWithRedirect } = useAuth0();
   return (
-    <Button
-      onClick={() => loginWithRedirect()}
-      fontFamily={'Space Mono'}
-    >
-      Log In
+    <Button onClick={() => loginWithRedirect()} fontFamily={'Space Mono'}>
+      Login
     </Button>
   );
 };
