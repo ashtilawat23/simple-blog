@@ -36,6 +36,14 @@ const listings = [
     tags: ["JavaScript", "React", "Node"]
   },
   {
+    company: "Meta",
+    title: "Frontend Engineer",
+    source: "https://cdn.worldvectorlogo.com/logos/meta-1.svg",
+    salary: "$90k-$120k",
+    location: "Los Angeles, CA",
+    tags: ["JavaScript", "React", "Node"]
+  },
+  {
     company: "Airbnb",
     title: "Developer Advocate",
     source: "https://cdn.worldvectorlogo.com/logos/airbnb-1.svg",
@@ -51,6 +59,14 @@ const listings = [
     location: "New York City, NY",
     tags: ["JavaScript", "React", "Node"]
   },
+  {
+    company: "Meta",
+    title: "Frontend Engineer",
+    source: "https://cdn.worldvectorlogo.com/logos/meta-1.svg",
+    salary: "$90k-$120k",
+    location: "Los Angeles, CA",
+    tags: ["JavaScript", "React", "Node"]
+  }
 ];
 
 export const Content = () => {
