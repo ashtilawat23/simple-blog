@@ -17,12 +17,7 @@ export const JobPost = (props) => {
   if (isLargerThan1300) {
     return (
       <Box className="jobpost" borderRadius={'lg'} borderWidth="1px" p={2}>
-        <Image
-          borderRadius={'lg'}
-          boxSize="5vh"
-          src={props.source}
-          alt={props.company}
-        />
+        <Image borderRadius={'lg'} boxSize="5vh" src={props.source} alt={props.company} />
         <Box className="jobinfo">
           <Text fontFamily={'Space Mono'} fontSize="sm">
             {props.company}
@@ -40,10 +35,10 @@ export const JobPost = (props) => {
             {props.tags[0]}
           </Tag>
           <Tag variant={'outline'} colorScheme="cyan">
-          {props.tags[1]}
+            {props.tags[1]}
           </Tag>
           <Tag variant={'outline'} colorScheme="orange">
-          {props.tags[2]}
+            {props.tags[2]}
           </Tag>
         </Box>
         <ButtonGroup>
@@ -60,12 +55,7 @@ export const JobPost = (props) => {
   } else {
     return (
       <Box className="jobpostsm" borderRadius={'lg'} borderWidth="1px" p={2}>
-        <Image
-          borderRadius={'lg'}
-          boxSize="5vh"
-          src={props.source}
-          alt={props.company}
-        />
+        <Image borderRadius={'lg'} boxSize="5vh" src={props.source} alt={props.company} />
         <Box className="jobinfosm">
           <Text fontFamily={'Space Mono'} fontSize="sm">
             {props.company}
