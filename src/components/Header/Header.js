@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Heading, Button, useMediaQuery } from '@chakra-ui/react';
-import { Hamburger } from './Header/Hamburger';
+import { Hamburger } from './Hamburger';
 import { Nav } from './Nav';
 import { QuickLinks } from './QuickLinks';
 

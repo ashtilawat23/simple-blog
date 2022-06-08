@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Divider } from '@chakra-ui/react';
-import { JobPost } from './Content/JobPost';
+import { JobPost } from './JobPost';
 
 const listings = [
   {
